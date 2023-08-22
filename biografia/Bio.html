@@ -9,6 +9,22 @@
 
 
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <p> item 1</p>
+                </li>
+                <li>
+                    <p> item 2</p>
+                </li>
+                <li>
+                    <p> item 3</p>
+                </li>
+            </ul>
+        </nav>
+    </header>
     
     <main class="background">
         <section class="container">
@@ -20,6 +36,53 @@
                 
             </article>
         </section>
+
+
+
+
+
+        <script>
+            function Dom( seletor) {
+                
+                    
+                this.element = document.querySelector(seletor)
+
+                this.ativo = function() {
+                    this.element().classList.add('ativo')
+                }
+
+
+            }
+
+            const li = new Dom ('li')
+            const ul = new Dom('ul')
+            <!-- console.log (li, ul); -->
+            
+
+
+
+
+            <!-- nova constructor function -->
+
+
+            function Pessoa(nomeAtribute, idadeAtribute){
+                this.nome = nomeAtribute,
+                this.idade = idadeAtribute,
+                this.andar = function(){
+                    console.log(`${this.nome} andou !!!`)
+                }
+
+            }
+
+            const Henrique = new Pessoa('Henrique', 20)
+            const Joao = new Pessoa('joao',20)
+            const Maia = new Pessoa('Maia', 25)
+            const Bruno = new Pessoa('Bruno', 15)
+
+
+
+
+        </script>
     </main>
 </body>
 </html>
