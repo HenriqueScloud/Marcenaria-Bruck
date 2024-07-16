@@ -1,10 +1,6 @@
+import { RouterMain } from "./routes/RouterMain";
 
 function App() {
-  return (
-    <>
-      <h1>ola marcenaria bruck</h1>
-      <p>site oficial em produção</p>
-    </>
-  )
+  return <RouterMain />;
 }
-export default App
+export default App;
